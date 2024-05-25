@@ -79,13 +79,13 @@
 <div class="container">
   {#if $username}
     <main on:scroll={debouncedWatchScroll}>
-      {#each messages as message (message.when)}
-        <ChatMessage {message} sender={$username} />
-      {/each}
+        {#each messages as message (message.when)}
+          <ChatMessage {message} sender={$username} />
+        {/each}
 
-      <div class="dummy" bind:this={scrollBottom} />
+        <div class="dummy" bind:this={scrollBottom} />
+
     </main>
-
     <form class="input-form" on:submit|preventDefault={sendMessage}>
       <input class="input-mex" type="text" placeholder="Type a message..." bind:value={newMessage} maxlength="100" />
 
