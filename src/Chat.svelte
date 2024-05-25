@@ -44,7 +44,7 @@
       .once(async (data, id) => {
         if (data) {
           // Key for end-to-end encryption
-          const key = '#foo';
+          const key = '#foo'; // Not very secure
 
           var message = {
             // transform the data
@@ -86,16 +86,16 @@
       <div class="dummy" bind:this={scrollBottom} />
     </main>
 
-    <form on:submit|preventDefault={sendMessage}>
-      <input type="text" placeholder="Type a message..." bind:value={newMessage} maxlength="100" />
+    <form class="input-form" on:submit|preventDefault={sendMessage}>
+      <input class="input-mex" type="text" placeholder="Type a message..." bind:value={newMessage} maxlength="100" />
 
-      <button type="submit" disabled={!newMessage}>💥</button>
+      <button class="submit" type="submit" disabled={!newMessage}>Send</button>
     </form>
 
 
     {#if !canAutoScroll}
-    <div class="scroll-button">
-      <button on:click={autoScroll} class:red={unreadMessages}>
+    <div>
+      <button class="scroll-button" on:click={autoScroll} class:red={unreadMessages}>
         {#if unreadMessages}
           💬
         {/if}

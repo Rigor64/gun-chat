@@ -19,12 +19,13 @@
   }
 </script>
 
-<label for="username">Username</label>
-<input name="username" bind:value={username} minlength="3" maxlength="16" />
 
-<label for="password">Password</label>
-<input name="password" bind:value={password} type="password" />
+<input name="username" bind:value={username} minlength="3" maxlength="16" placeholder="Username" />
+<input name="password" bind:value={password} type="password" placeholder="Password"/>
 
+<div style="display: flex, align: center ">
 <button class="login" on:click={login}>Login</button>
 <button class="login"  on:click={signup}>Sign Up</button>
+</div>
+
   

@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import { networkInterfaces } from 'os';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -28,6 +29,31 @@ function serve() {
 	};
 }
 
+function logNetworkHost() {
+	//change "start": "sirv public --no-clear --dev --host" in package.json
+	return {
+	  name: 'log-network-host',
+	  buildStart() {
+		const nets = networkInterfaces();
+		const results = {};
+  
+		for (const name of Object.keys(nets)) {
+		  for (const net of nets[name]) {
+			// Skip over non-IPv4 and internal (i.e. 127.0.0.1) addresses
+			if (net.family === 'IPv4' && !net.internal) {
+			  if (!results[name]) {
+				results[name] = [];
+			  }
+			  results[name].push(net.address);
+			}
+		  }
+		}
+  
+		console.log('Network Host(s):', results);
+	  }
+	};
+  }
+
 export default {
 	input: 'src/main.js',
 	output: {
@@ -37,7 +63,8 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
-		svelte({
+		logNetworkHost(),
+		svelte({		
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
@@ -45,7 +72,7 @@ export default {
 		}),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
-		css({ output: 'bundle.css' }),
+		css({ output: 'gloabl.css' }),
 
 		resolve({
 			browser: true,

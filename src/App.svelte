@@ -6,4 +6,4 @@
 <div class="app">
     <Header />
     <Chat />
-</div>
+</div> 

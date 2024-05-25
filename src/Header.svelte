@@ -8,18 +8,18 @@
 </script>
 
 <header>
-<h1>🔫💬</h1>
+<h1>🌳</h1>
   {#if $username}
     <div class="user-bio">
       
-      <span>Hello <strong>{$username}</strong></span>
-      <img src={`https://avatars.dicebear.com/api/initials/${$username}.svg`} alt="avatar" /> 
+      <img src={`https://api.dicebear.com/8.x/pixel-art/svg?seed=${$username}`} alt="avatar" /> 
+      <span><strong>{$username}</strong></span>
     </div>
 
     <button class="signout-button" on:click={signout}>Sign Out</button>
 
     {:else}
 
-      <h3>Gun.js Chat</h3>
+      <h3>Nature dApp</h3>
   {/if}
 </header>
