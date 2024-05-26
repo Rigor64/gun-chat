@@ -43,7 +43,7 @@ JogTalk is a unique chat app designed to help you to connect with others while y
 
 <p align="right">(<a href="#readme-top">Back on top</a>)</p>
 
-<!-- PROJECT specifications -->
+<!-- PROJECT SPECITIFATIONS -->
 ## Project specifications
 <!-- DECENTRALIZED DATABASE -->
 1. **Decentralized Database:**
