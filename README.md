@@ -22,10 +22,10 @@
     <li>
       <a href="#project-specifications">Project specifications</a>
       <ul>
-        <li><a href="#decentralized-database">Decentralized Database</a></li>
-        <li><a href="#message-transmission-and-encryption">Message Transmission and Encryption</a></li>
-        <li><a href="#user-interface">User interface</a></li>
-          <li><a href="#accessibility-and-usage">Accessibility and Usage</a></li>
+        <li>Decentralized Database</li>
+        <li>Message Transmission and Encryption</li>
+        <li>User interface</li>
+          <li>Accessibility and Usage</li>
       </ul>
     </li>
     <li>
