@@ -44,7 +44,7 @@
       .once(async (data, id) => {
         if (data) {
           // Key for end-to-end encryption
-          const key = '#foo'; // Not very secure
+          const key = '#rG.k4FALy-TB_gF';
 
           var message = {
             // transform the data
@@ -66,7 +66,7 @@
   });
 
   async function sendMessage() {
-    const secret = await SEA.encrypt(newMessage, '#foo');
+    const secret = await SEA.encrypt(newMessage, '#rG.k4FALy-TB_gF');
     const message = user.get('all').set({ what: secret });
     const index = new Date().toISOString();
     db.get('chat').get(index).put(message);
