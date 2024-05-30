@@ -112,7 +112,7 @@
 ## Design choices
 - The master key for the end-to-end encryption of the messages is: `rG.k4FALy-TB_gF`
 - All the users are connected to the same chat
-- For the project the languagues that has been used are : 
+  
 <p align="right">(<a href="#readme-top">Back on top</a>)</p>
 
 <!-- INSTALLATION -->
