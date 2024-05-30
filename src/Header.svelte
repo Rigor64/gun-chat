@@ -20,6 +20,6 @@
 
     {:else}
 
-      <h3>Nature dApp</h3>
+      <h2 class="app-name">JogTalk</h2>
   {/if}
 </header>
