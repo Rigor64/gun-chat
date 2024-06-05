@@ -80,7 +80,9 @@
   {#if $username}
     <main on:scroll={debouncedWatchScroll}>
         {#each messages as message (message.when)}
+          {#if message.who != "undefined"}
           <ChatMessage {message} sender={$username} />
+          {/if}
         {/each}
 
         <div class="dummy" bind:this={scrollBottom} />
