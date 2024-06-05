@@ -12,6 +12,7 @@
   {#if $username}
     <div class="user-bio">
       
+      
       <img src={`https://api.dicebear.com/8.x/pixel-art/svg?seed=${$username}`} alt="avatar" /> 
       <span><strong>{$username}</strong></span>
     </div>
