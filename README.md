@@ -30,6 +30,13 @@
     </li>
     <li>
       <a href="#protocol-description">Protocol description</a>
+      <ul>
+        <li>Data structure</li>
+        <li>Real-time Updates and Synchronization</li>
+        <li>Conflict Resolution</li>
+        <li>Message Passing</li>
+        <li>Main Operations</li>
+      </ul>
     </li>
     <li>
       <a href="#design-choices">Design choices</a>
@@ -81,6 +88,12 @@
 4. **Accessibility and Usage:**
    - Users can join a global chat upon logging in, where they can share experiences, provide feedback, and encourage each other.
    - The `QR code` system simplifies access to the app, making it easy for users to connect and interact without the need for complex setup procedures.
+   
+<br>
+<div align="center">
+<img src="public/QRcode.png" alt="Screen1" width="258" height="410">
+</div>
+</br>
 
 <p align="right">(<a href="#readme-top">Back on top</a>)</p>
 
@@ -106,7 +119,7 @@
    - Message paradigm: The message object contain the parameters `who` (the user's name),`what` (the message),`when` (timestamp)
    - Transport Layer: `GUN.js` supports multiple transport layers, such as WebSockets, HTTP, and peer-to-peer connections. This flexibility allows it to operate in various network conditions.
 
-5. **Main operations**
+5. **Main Operations**
    - Local Cache: `GUN.js` maintains a local cache to ensure the application works offline. Changes made while offline are stored locally and synced once the connection is restored.
    - Reconciliation: When reconnecting, `GUN.js` reconciles local changes with the remote state using `CRDTs`, ensuring consistency without data loss.
    - Anti-Entropy Mechanism: `GUN.js` uses an anti-entropy mechanism to periodically exchange state information between nodes. This ensures that even if some updates are missed, nodes will eventually converge to the same state.
