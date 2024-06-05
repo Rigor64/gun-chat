@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-## Matteo Leopizzi 326110
+### [Matteo Leopizzi](https://github.com/Rigor64) 326110
 
 <!-- LOGO -->
 <br />
@@ -43,6 +43,13 @@
 <!-- OVERVIEW -->
 ## Overview
 `JogTalk` is a unique chat app designed to help you to connect with others while you're out jogging or walking. Simply scan one of our specially designed QR codes with your device, that you can find around the entrances of parks, open fields, or at the beginning of a trail, and you'll be directed to our web service where the app runs seamlessly. Once logged in, you can join a global chat where users can share experiences, give feedback, and motivate each other. The goal of `JogTalk` is to promote outdoor activities and encourage people to engage with others nearby who are in the same location. Whether you're looking for a jogging partner, seeking motivation, or just want to share your journey, JogTalk makes your outdoor experience more interactive and enjoyable. Get moving and start chatting with `JogTalk`!
+
+<br />
+<div align="center">
+    <img style= "display: inline-block, margin-right: 20vh " src="public/screen2.png" alt="Screen1" width="370" height="650">
+    <img style= "display: inline-block, margin-left: 20vh" src="public/screen1.png" alt="Screen1" width="370" height="650">
+</div>
+<br />
 
 <p align="right">(<a href="#readme-top">Back on top</a>)</p>
 
@@ -112,6 +119,7 @@
 ## Design choices
 - The master key for the end-to-end encryption of the messages is: `rG.k4FALy-TB_gF`
 - All the users are connected to the same chat
+- Languages used: `Javascript`, `HTML`, `CSS`, `Svelte` (a simple way to make html and javascript communicate with each other)
   
 <p align="right">(<a href="#readme-top">Back on top</a>)</p>
 
