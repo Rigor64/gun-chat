@@ -8,7 +8,7 @@
     <img src="https://github.com/Rigor64/gun-chat/blob/main/public/favicon2.png" alt="Logo" width="100" height="100">
 
   <h1 align="center">JogTalk</h1>
-  <h2 align="center">A decentralized chat app for your journey</h2>
+  <h3 align="center">A decentralized chat app for your journey</h3>
 
 </div>
 
@@ -100,7 +100,7 @@
 <!-- PROTOCOL DESCRIPTION -->
 ## Protocol description
 
-[GUN](https://gun.eco/) is a small, easy, and fast protocol for syncing data. `GUN` is a database engine that runs every­where JavaScript does browsers, mo­bile de­vices and servers, al­low­ing you to build ex­act­ly the data sys­tem you want. `GUN.JS` aka `GunDB` is more than just a graph database. `GUN` is fully decentralized (peer-to-peer or multi-master), changes are not controlled by a centralized server. A server can be just another peer (node or vertices) in the network, one that may have more reliable resources than a browser. You save data on one machine, and it will sync it to other peers without needing a complex consensus protocol. GUN allows for data synchronization to happen seamlessly between all connected nodes by default. It’s offline first capabilities mean that if connectivity is lost to other nodes due to a network error or no availability, the application will store all changes locally and automatically synchronize as soon there is a connection. The gun graph database is stored across all peers participating in the network. Most data distribution scenarios that one could think of are possible to occur: Every peer might possess the complete graph, or only a subset of the complete graph and may possess data that does not exist on any other node. The whole database is considered to be the union of all peers’ graphs.
+[GUN](https://gun.eco/) is a small, easy, and fast protocol for syncing data. `GUN` is a database engine that runs every­where JavaScript does browsers, mo­bile de­vices and servers, al­low­ing you to build ex­act­ly the data sys­tem you want. `GUN.JS` aka `GunDB` is more than just a graph database. `GUN` is fully decentralized (peer-to-peer or multi-master), changes are not controlled by a centralized server. A server can be just another peer (node or vertices) in the network, one that may have more reliable resources than a browser. You save data on one machine, and it will sync it to other peers without needing a complex consensus protocol. GUN allows for data synchronization to happen seamlessly between all connected nodes by default. It’s offline first capabilities mean that if connectivity is lost to other nodes due to a network error or no availability, the application will store all changes locally and automatically synchronize as soon there is a connection. The gun graph database is stored across all peers participating in the network. Most data distribution scenarios that one could think of are possible to occur: every peer might possess the complete graph, or only a subset of the complete graph and may possess data that does not exist on any other node. The whole database is considered to be the union of all peers’ graphs.
 
 1. **Data structure**
    - Graph Data Model: `GUN.js` stores data in a graph format, which allows for flexible, hierarchical, and interconnected data.
